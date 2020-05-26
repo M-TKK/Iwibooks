@@ -1,0 +1,119 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #08324a;
+}
+
+.iwi-main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.iwi-main #iwi-wrapper .iwi-logo {
+  text-align: center;
+}
+
+.iwi-main #iwi-wrapper .iwi-logo img {
+  width: 80%;
+}
+
+.iwi-main #iwi-wrapper .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.iwi-main #iwi-wrapper .main-nav a {
+  color: #527fb3;
+  text-decoration: none;
+  font-size: 1.4em;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.iwi-main #iwi-wrapper .main-nav div {
+  margin-right: 1em;
+}
+
+.iwi-main #iwi-wrapper .main-nav div:last-of-type {
+  margin-right: 0;
+}
+
+@media all and (min-width: 1200px) and (max-width: 1920px) {
+  .iwi-main #iwi-wrapper .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    word-spacing: 1em;
+  }
+  .iwi-main #iwi-wrapper .main-nav div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 120px;
+    height: 110px;
+    background: transparent;
+    border-radius: 50%;
+    margin-right: 0.58rem;
+  }
+  .iwi-main #iwi-wrapper .main-nav div:hover {
+    background: #527fb3;
+    -webkit-transition: 1000ms;
+    transition: 1000ms;
+  }
+  .iwi-main #iwi-wrapper .main-nav div:hover a {
+    color: #fff;
+  }
+  .iwi-main #iwi-wrapper .main-nav div:nth-child(2):hover {
+    background: #d8ce71;
+    -webkit-transition: 1000ms;
+    transition: 1000ms;
+  }
+  .iwi-main #iwi-wrapper .main-nav div:nth-child(3):hover {
+    background: #7d58e0;
+    -webkit-transition: 1000ms;
+    transition: 1000ms;
+  }
+  .iwi-main #iwi-wrapper .main-nav div:nth-child(4):hover {
+    background: #c93939;
+    -webkit-transition: 1000ms;
+    transition: 1000ms;
+  }
+  .iwi-main #iwi-wrapper .main-nav a {
+    color: #527fb3;
+    font-size: 1.7rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */

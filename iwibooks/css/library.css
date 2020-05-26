@@ -1,0 +1,1142 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  border: 2px solid transparent;
+  background: #08324a;
+}
+
+#header .header-container .flex-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .header-container .flex-left .main-logo {
+  width: 45%;
+}
+
+#header .header-container .flex-left .main-logo img {
+  width: 100%;
+}
+
+#header .header-container #openbtn {
+  color: #386b89;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#header .header-container #main-links, #header .header-container #social-links {
+  display: none;
+}
+
+#header #navLinks {
+  background: #386b89;
+  text-align: left;
+  display: none;
+}
+
+#header #navLinks a {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  padding: 1em;
+  border: 2px solid transparent;
+  color: #08324a;
+}
+
+.under-construct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1em;
+}
+
+.under-construct .book1-card {
+  width: 100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.under-construct .book1-card img {
+  width: 100%;
+}
+
+.under-construct .book1-card .link-container {
+  width: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.under-construct .book1-card .link-container h4 {
+  margin: 0 0 1rem 0;
+  font-family: 'Roboto';
+  text-transform: capitalize;
+}
+
+.under-construct .book1-card .link-container a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: 'Roboto';
+  color: #303030;
+  background: #386b89;
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+}
+
+.under-construct .book1-card .link-container span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.library {
+  padding: 1em;
+  height: 88%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.library #library-container {
+  height: auto;
+}
+
+.library #library-container .bookshelf .shelf1 {
+  background: url(../img/wall-bookshelf.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 175px;
+}
+
+.library #library-container .bookshelf .shelf1 .shelf-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.library #library-container .bookshelf .shelf1 .shelf-container span {
+  display: block;
+  width: 95px;
+  height: 130px;
+  background: #386b89;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.library #library-container .bookshelf .shelf1 .shelf-container span:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.book-sample #book-container {
+  height: 88vh;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.book-sample #book-container #flipbook {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  position: absolute;
+  overflow: hidden;
+  width: 350px;
+  height: 250px;
+  margin: 0 auto;
+  margin-left: 0;
+}
+
+.book-sample #book-container #flipbook .page-wrapper {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.book-sample #book-container #flipbook img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media all and (min-device-width: 1100px) and (max-device-width: 1250px) and (-webkit-min-device-pixel-ratio: 1) {
+  #header .header-container #social-links {
+    display: block;
+    word-spacing: 20px;
+    margin-top: 0.4rem;
+  }
+  #header .header-container #social-links a {
+    font-size: 1.6rem;
+    color: #386b89;
+  }
+  #header .header-container #social-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  #header .header-container .flex-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #header .header-container .flex-left .main-logo {
+    width: 17% !important;
+    margin-right: 3rem;
+  }
+  #header .header-container .flex-left .main-logo img {
+    width: 100% !important;
+  }
+  #header .header-container #openbtn {
+    display: none;
+  }
+  #header .header-container #main-links {
+    display: block;
+    word-spacing: 20px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.4em;
+  }
+  #header .header-container #main-links a {
+    text-decoration: none;
+    color: #386b89;
+    font-size: 1.05rem;
+  }
+  #header .header-container #main-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .library {
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .library #library-container {
+    height: auto;
+    width: 50%;
+  }
+  .library #library-container .bookshelf .shelf1 {
+    background: url(../img/wall-bookshelf.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 285px;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container span {
+    display: block;
+    width: 150px;
+    height: 210px;
+    background: #386b89;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .under-construct .book1-card {
+    width: 25%;
+  }
+  .under-construct .book1-card img {
+    width: 100%;
+  }
+  .book-sample {
+    height: 87vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-sample #book-container {
+    padding: 1em;
+    height: auto;
+    width: 77%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .book-sample #book-container #flipbook {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    overflow: hidden;
+    width: 900px;
+    height: 550px;
+    position: absolute;
+    top: 0rem;
+  }
+  .book-sample #book-container #flipbook img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media all and (min-device-width: 1260px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
+  #header .header-container #social-links {
+    display: block;
+    word-spacing: 20px;
+    margin-top: 0.4rem;
+  }
+  #header .header-container #social-links a {
+    font-size: 1.6rem;
+    color: #386b89;
+  }
+  #header .header-container #social-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  #header .header-container .flex-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #header .header-container .flex-left .main-logo {
+    width: 17% !important;
+    margin-right: 3rem;
+  }
+  #header .header-container .flex-left .main-logo img {
+    width: 100% !important;
+  }
+  #header .header-container #openbtn {
+    display: none;
+  }
+  #header .header-container #main-links {
+    display: block;
+    word-spacing: 20px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.4em;
+  }
+  #header .header-container #main-links a {
+    text-decoration: none;
+    color: #386b89;
+    font-size: 1.05rem;
+  }
+  #header .header-container #main-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .library {
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .library #library-container {
+    height: auto;
+    width: 50%;
+  }
+  .library #library-container .bookshelf .shelf1 {
+    background: url(../img/wall-bookshelf.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 285px;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container span {
+    display: block;
+    width: 150px;
+    height: 210px;
+    background: #386b89;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .under-construct .book1-card {
+    width: 25%;
+  }
+  .under-construct .book1-card img {
+    width: 100%;
+  }
+  .book-sample {
+    height: 88vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-sample #book-container {
+    padding: 1em;
+    height: auto;
+    width: 77%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .book-sample #book-container #flipbook {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    overflow: hidden;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 0rem;
+  }
+  .book-sample #book-container #flipbook img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media all and (min-device-width: 1366px) and (max-device-width: 1536px) and (-webkit-min-device-pixel-ratio: 1) {
+  #header .header-container #social-links {
+    display: block;
+    word-spacing: 20px;
+    margin-top: 0.4rem;
+  }
+  #header .header-container #social-links a {
+    font-size: 1.6rem;
+    color: #386b89;
+  }
+  #header .header-container #social-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  #header .header-container .flex-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #header .header-container .flex-left .main-logo {
+    width: 17% !important;
+    margin-right: 3rem;
+  }
+  #header .header-container .flex-left .main-logo img {
+    width: 100% !important;
+  }
+  #header .header-container #openbtn {
+    display: none;
+  }
+  #header .header-container #main-links {
+    display: block;
+    word-spacing: 20px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.4em;
+  }
+  #header .header-container #main-links a {
+    text-decoration: none;
+    color: #386b89;
+    font-size: 1.05rem;
+  }
+  #header .header-container #main-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .library {
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .library #library-container {
+    height: auto;
+    width: 60%;
+  }
+  .library #library-container .bookshelf .shelf1 {
+    background: url(../img/wall-bookshelf.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 365px;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container span {
+    display: block;
+    width: 190px;
+    height: 267px;
+    background: #386b89;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .under-construct .book1-card {
+    width: 19%;
+  }
+  .under-construct .book1-card img {
+    width: 100%;
+  }
+  .book-sample {
+    height: 88vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-sample #book-container {
+    padding: 1em;
+    height: auto;
+    width: 69%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .book-sample #book-container #flipbook {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    overflow: hidden;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 0rem;
+  }
+  .book-sample #book-container #flipbook img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media all and (min-device-width: 1536px) and (max-device-width: 1680px) and (-webkit-min-device-pixel-ratio: 1) {
+  #header .header-container #social-links {
+    display: block;
+    word-spacing: 20px;
+    margin-top: 0.4rem;
+  }
+  #header .header-container #social-links a {
+    font-size: 1.6rem;
+    color: #386b89;
+  }
+  #header .header-container #social-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  #header .header-container .flex-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #header .header-container .flex-left .main-logo {
+    width: 17% !important;
+    margin-right: 3rem;
+  }
+  #header .header-container .flex-left .main-logo img {
+    width: 100% !important;
+  }
+  #header .header-container #openbtn {
+    display: none;
+  }
+  #header .header-container #main-links {
+    display: block;
+    word-spacing: 20px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.4em;
+  }
+  #header .header-container #main-links a {
+    text-decoration: none;
+    color: #386b89;
+    font-size: 1.05rem;
+  }
+  #header .header-container #main-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .library {
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .library #library-container {
+    height: auto;
+    width: 60%;
+  }
+  .library #library-container .bookshelf .shelf1 {
+    background: url(../img/wall-bookshelf.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 400px;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container span {
+    display: block;
+    width: 210px;
+    height: 291px;
+    background: #386b89;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .under-construct .book1-card {
+    width: 19%;
+  }
+  .under-construct .book1-card img {
+    width: 100%;
+  }
+  .book-sample {
+    height: 88vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-sample #book-container {
+    padding: 1em;
+    height: auto;
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .book-sample #book-container #flipbook {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    overflow: hidden;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 0rem;
+  }
+  .book-sample #book-container #flipbook img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media all and (min-device-width: 1680px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+  #header .header-container #social-links {
+    display: block;
+    word-spacing: 20px;
+    margin-top: 0.4rem;
+  }
+  #header .header-container #social-links a {
+    font-size: 1.6rem;
+    color: #386b89;
+  }
+  #header .header-container #social-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  #header .header-container .flex-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #header .header-container .flex-left .main-logo {
+    width: 17% !important;
+    margin-right: 3rem;
+  }
+  #header .header-container .flex-left .main-logo img {
+    width: 100% !important;
+  }
+  #header .header-container #openbtn {
+    display: none;
+  }
+  #header .header-container #main-links {
+    display: block;
+    word-spacing: 20px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.4em;
+  }
+  #header .header-container #main-links a {
+    text-decoration: none;
+    color: #386b89;
+    font-size: 1.05rem;
+  }
+  #header .header-container #main-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .library {
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .library #library-container {
+    height: auto;
+    width: 60%;
+  }
+  .library #library-container .bookshelf .shelf1 {
+    background: url(../img/wall-bookshelf.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 415px;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container span {
+    display: block;
+    width: 210px;
+    height: 291px;
+    background: #386b89;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .under-construct .book1-card {
+    width: 19%;
+  }
+  .under-construct .book1-card img {
+    width: 100%;
+  }
+  .book-sample {
+    height: 88vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-sample #book-container {
+    padding: 1em;
+    height: auto;
+    width: 69%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .book-sample #book-container #flipbook {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    overflow: hidden;
+    width: 1100px;
+    height: 700px;
+    position: absolute;
+    top: 0rem;
+  }
+  .book-sample #book-container #flipbook img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media all and (min-device-width: 1900px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+  #header .header-container #social-links {
+    display: block;
+    word-spacing: 20px;
+    margin-top: 0.4rem;
+  }
+  #header .header-container #social-links a {
+    font-size: 1.6rem;
+    color: #386b89;
+  }
+  #header .header-container #social-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  #header .header-container .flex-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #header .header-container .flex-left .main-logo {
+    width: 17% !important;
+    margin-right: 3rem;
+  }
+  #header .header-container .flex-left .main-logo img {
+    width: 100% !important;
+  }
+  #header .header-container #openbtn {
+    display: none;
+  }
+  #header .header-container #main-links {
+    display: block;
+    word-spacing: 20px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.4em;
+  }
+  #header .header-container #main-links a {
+    text-decoration: none;
+    color: #386b89;
+    font-size: 1.05rem;
+  }
+  #header .header-container #main-links a:hover {
+    color: #fff;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .library {
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .library #library-container {
+    height: auto;
+    width: 50%;
+  }
+  .library #library-container .bookshelf .shelf1 {
+    background: url(../img/wall-bookshelf.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 410px;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .library #library-container .bookshelf .shelf1 .shelf-container span {
+    display: block;
+    width: 210px;
+    height: 291px;
+    background: #386b89;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .under-construct .book1-card {
+    width: 19%;
+  }
+  .under-construct .book1-card img {
+    width: 100%;
+  }
+  .book-sample {
+    height: 88vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-sample #book-container {
+    padding: 1em;
+    height: auto;
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .book-sample #book-container #flipbook {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    overflow: hidden;
+    width: 1100px;
+    height: 700px;
+    position: absolute;
+    top: 0rem;
+  }
+  .book-sample #book-container #flipbook img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=library.css.map */

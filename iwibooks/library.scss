@@ -1,0 +1,1164 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // background: #386b89;
+}
+
+#header{
+
+  .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border: 2px solid transparent;
+    background: #08324a;
+
+    .flex-left{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .main-logo{
+        width: 45%;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+    
+
+    #openbtn{
+      color: #386b89;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    #main-links, #social-links{
+      display: none;
+    }
+    
+  }
+
+  #navLinks{
+    background: #386b89;
+    text-align: left;
+    display: none;
+
+    a{
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      text-decoration: none;
+      font-size: 1.2em;
+      display: block;
+      padding: 1em;
+      border: 2px solid transparent;
+      color: #08324a;
+    }
+  
+  }
+}
+
+.under-construct{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1em;
+
+  .book1-card{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    img{
+      width: 100%;
+    }
+
+    .link-container{
+      width: 100%;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h4{
+        margin: 0 0 1rem 0;
+        font-family: 'Roboto';
+        text-transform: capitalize;
+      }
+
+      a{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: 'Roboto';
+        color: #303030;
+        background: #386b89;
+        color: #fff;
+        padding: 0.6rem 0.9rem;
+      }
+
+      span{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+}
+
+.library{
+  padding: 1em;
+  height: 88%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  #library-container{
+    height: auto;
+
+    .bookshelf{
+
+      .shelf1{
+        background: url(../img/wall-bookshelf.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 175px;
+
+        
+        .shelf-container{
+          display: flex;
+          justify-content: space-evenly;
+          
+
+          span{
+            display: block;
+            width: 95px;
+            height: 130px;
+            background: #386b89;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+            &:hover{
+              transform: scale(1.05);
+              transition: 0.8s;
+              transition-timing-function: ease-in-out;
+            }
+          }
+        }
+      }
+
+      
+    }
+  }
+}
+
+.book-sample{
+  #book-container{
+    height: 88vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    #flipbook{
+      touch-action: manipulation;
+      position: absolute;
+      overflow: hidden;
+      width: 350px;
+      height: 250px;
+      margin: 0 auto;
+      margin-left: 0;
+
+      .page-wrapper{
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+      img{
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      
+    }
+
+  }
+}
+
+@media all 
+  and (min-device-width: 1100px) 
+  and (max-device-width: 1250px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+  #header{
+
+    .header-container{
+      
+      #social-links{
+        display: block;
+        word-spacing: 20px;
+        margin-top: 0.4rem;
+
+        a{
+          font-size: 1.6rem;
+          color: #386b89;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+      }
+
+      .flex-left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .main-logo{
+          width: 17%!important;
+          margin-right: 3rem;
+  
+          img{
+            width: 100%!important;
+          }
+        }
+      }
+      
+
+      #openbtn{
+        display: none;
+      }
+
+      #main-links{
+        display: block;
+        word-spacing: 20px;
+        text-transform:  capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.4em;
+
+        a{
+          text-decoration: none;
+          color: #386b89;
+          font-size: 1.05rem;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+
+      }
+    }
+  }
+
+  .library{
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  #library-container{
+    height: auto;
+    width: 50%;
+
+    .bookshelf{
+
+      .shelf1{
+        background: url(../img/wall-bookshelf.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 285px;
+
+        
+        .shelf-container{
+          display: flex;
+          justify-content: space-evenly;
+          
+
+          span{
+            display: block;
+            width: 150px;
+            height: 210px;
+            background: #386b89;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+        }
+      }
+
+      
+    }
+  }
+}
+
+  .under-construct{
+    
+    .book1-card{
+      width: 25%;
+
+
+      img{
+        width: 100%;
+        
+      }
+    }
+  }
+
+  .book-sample{
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  #book-container{
+    padding: 1em;
+    height: auto;
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+    #flipbook{
+      touch-action: manipulation;
+      overflow: hidden;
+      width: 900px;
+      height: 550px;
+      position: absolute;
+      top: 0rem;
+      // margin-left: -100px!important;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+
+
+    
+  }
+}
+}
+
+@media all 
+  and (min-device-width: 1260px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+  #header{
+
+    .header-container{
+      
+      #social-links{
+        display: block;
+        word-spacing: 20px;
+        margin-top: 0.4rem;
+
+        a{
+          font-size: 1.6rem;
+          color: #386b89;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+      }
+
+      .flex-left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .main-logo{
+          width: 17%!important;
+          margin-right: 3rem;
+  
+          img{
+            width: 100%!important;
+          }
+        }
+      }
+      
+
+      #openbtn{
+        display: none;
+      }
+
+      #main-links{
+        display: block;
+        word-spacing: 20px;
+        text-transform:  capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.4em;
+
+        a{
+          text-decoration: none;
+          color: #386b89;
+          font-size: 1.05rem;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+
+      }
+    }
+  }
+
+  .library{
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  #library-container{
+    height: auto;
+    width: 50%;
+
+    .bookshelf{
+
+      .shelf1{
+        background: url(../img/wall-bookshelf.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 285px;
+
+        
+        .shelf-container{
+          display: flex;
+          justify-content: space-evenly;
+          
+
+          span{
+            display: block;
+            width: 150px;
+            height: 210px;
+            background: #386b89;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+        }
+      }
+
+      
+    }
+  }
+}
+
+  .under-construct{
+    
+    .book1-card{
+      width: 25%;
+
+
+      img{
+        width: 100%;
+        
+      }
+    }
+  }
+
+  .book-sample{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  #book-container{
+    padding: 1em;
+    height: auto;
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    #flipbook{
+      touch-action: manipulation;
+      overflow: hidden;
+      width: 1000px;
+      height: 600px;
+      position: absolute;
+      top: 0rem;
+      // margin-left: -100px!important;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+
+
+    
+  }
+}
+}
+
+
+
+
+@media all 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1536px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+  #header{
+
+    .header-container{
+      
+      #social-links{
+        display: block;
+        word-spacing: 20px;
+        margin-top: 0.4rem;
+
+        a{
+          font-size: 1.6rem;
+          color: #386b89;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+      }
+
+      .flex-left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .main-logo{
+          width: 17%!important;
+          margin-right: 3rem;
+  
+          img{
+            width: 100%!important;
+          }
+        }
+      }
+      
+
+      #openbtn{
+        display: none;
+      }
+
+      #main-links{
+        display: block;
+        word-spacing: 20px;
+        text-transform:  capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.4em;
+
+        a{
+          text-decoration: none;
+          color: #386b89;
+          font-size: 1.05rem;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+
+      }
+    }
+  }
+
+  .library{
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  #library-container{
+    height: auto;
+    width: 60%;
+
+    .bookshelf{
+
+      .shelf1{
+        background: url(../img/wall-bookshelf.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 365px;
+
+        
+        .shelf-container{
+          display: flex;
+          justify-content: space-evenly;
+          
+
+          span{
+            display: block;
+            width: 190px;
+            height: 267px;
+            background: #386b89;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+        }
+      }
+
+      
+    }
+  }
+}
+
+  .under-construct{
+    
+    .book1-card{
+      width: 19%;
+
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .book-sample{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  #book-container{
+    padding: 1em;
+    height: auto;
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    #flipbook{
+      touch-action: manipulation;
+      overflow: hidden;
+      width: 1000px;
+      height: 600px;
+      position: absolute;
+      top: 0rem;
+      // margin-left: -100px!important;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+
+
+    
+  }
+}
+}
+
+@media all 
+  and (min-device-width: 1536px) 
+  and (max-device-width: 1680px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+  #header{
+
+    .header-container{
+      
+      #social-links{
+        display: block;
+        word-spacing: 20px;
+        margin-top: 0.4rem;
+
+        a{
+          font-size: 1.6rem;
+          color: #386b89;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+      }
+
+      .flex-left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .main-logo{
+          width: 17%!important;
+          margin-right: 3rem;
+  
+          img{
+            width: 100%!important;
+          }
+        }
+      }
+      
+
+      #openbtn{
+        display: none;
+      }
+
+      #main-links{
+        display: block;
+        word-spacing: 20px;
+        text-transform:  capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.4em;
+
+        a{
+          text-decoration: none;
+          color: #386b89;
+          font-size: 1.05rem;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+
+      }
+    }
+  }
+
+  .library{
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  #library-container{
+    height: auto;
+    width: 60%;
+
+    .bookshelf{
+
+      .shelf1{
+        background: url(../img/wall-bookshelf.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 400px;
+
+        
+        .shelf-container{
+          display: flex;
+          justify-content: space-evenly;
+          
+
+          span{
+            display: block;
+            width: 210px;
+            height: 291px;
+            background: #386b89;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+        }
+      }
+
+      
+    }
+  }
+}
+
+  .under-construct{
+    
+    .book1-card{
+      width: 19%;
+
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .book-sample{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  #book-container{
+    padding: 1em;
+    height: auto;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    #flipbook{
+      touch-action: manipulation;
+      overflow: hidden;
+      width: 1000px;
+      height: 600px;
+      position: absolute;
+      top: 0rem;
+      // margin-left: -100px!important;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+
+
+    
+  }
+}
+}
+
+@media all 
+  and (min-device-width: 1680px) 
+  and (max-device-width: 1920px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+  #header{
+
+    .header-container{
+      
+      #social-links{
+        display: block;
+        word-spacing: 20px;
+        margin-top: 0.4rem;
+
+        a{
+          font-size: 1.6rem;
+          color: #386b89;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+      }
+
+      .flex-left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .main-logo{
+          width: 17%!important;
+          margin-right: 3rem;
+  
+          img{
+            width: 100%!important;
+          }
+        }
+      }
+      
+
+      #openbtn{
+        display: none;
+      }
+
+      #main-links{
+        display: block;
+        word-spacing: 20px;
+        text-transform:  capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.4em;
+
+        a{
+          text-decoration: none;
+          color: #386b89;
+          font-size: 1.05rem;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+
+      }
+    }
+  }
+
+  .library{
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  #library-container{
+    height: auto;
+    width: 60%;
+
+    .bookshelf{
+
+      .shelf1{
+        background: url(../img/wall-bookshelf.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 415px;
+
+        
+        .shelf-container{
+          display: flex;
+          justify-content: space-evenly;
+          
+
+          span{
+            display: block;
+            width: 210px;
+            height: 291px;
+            background: #386b89;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+        }
+      }
+
+    }
+  }
+}
+
+  .under-construct{
+    
+    .book1-card{
+      width: 19%;
+
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .book-sample{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  #book-container{
+    padding: 1em;
+    height: auto;
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    #flipbook{
+      touch-action: manipulation;
+      overflow: hidden;
+      width: 1100px;
+      height: 700px;
+      position: absolute;
+      top: 0rem;
+      // margin-left: -100px!important;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+
+
+    
+  }
+}
+}
+
+
+@media all 
+  and (min-device-width: 1900px) 
+  and (max-device-width: 1920px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+  #header{
+
+    .header-container{
+      
+      #social-links{
+        display: block;
+        word-spacing: 20px;
+        margin-top: 0.4rem;
+
+        a{
+          font-size: 1.6rem;
+          color: #386b89;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+      }
+
+      .flex-left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .main-logo{
+          width: 17%!important;
+          margin-right: 3rem;
+  
+          img{
+            width: 100%!important;
+          }
+        }
+      }
+      
+
+      #openbtn{
+        display: none;
+      }
+
+      #main-links{
+        display: block;
+        word-spacing: 20px;
+        text-transform:  capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.4em;
+
+        a{
+          text-decoration: none;
+          color: #386b89;
+          font-size: 1.05rem;
+
+          &:hover{
+            color: #fff;
+            transition: 0.7s;
+          }
+        }
+
+      }
+    }
+  }
+
+  .library{
+    padding: 1em;
+    height: 88%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  #library-container{
+    height: auto;
+    width: 50%;
+
+    .bookshelf{
+
+      .shelf1{
+        background: url(../img/wall-bookshelf.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 410px;
+
+        
+        .shelf-container{
+          display: flex;
+          justify-content: space-evenly;
+          
+
+          span{
+            display: block;
+            width: 210px;
+            height: 291px;
+            background: #386b89;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+        }
+      }
+
+    }
+  }
+}
+
+  .under-construct{
+    
+    .book1-card{
+      width: 19%;
+
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .book-sample{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  #book-container{
+    padding: 1em;
+    height: auto;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    #flipbook{
+      touch-action: manipulation;
+      overflow: hidden;
+      width: 1100px;
+      height: 700px;
+      position: absolute;
+      top: 0rem;
+      // margin-left: -100px!important;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+
+
+    
+  }
+}
+}
